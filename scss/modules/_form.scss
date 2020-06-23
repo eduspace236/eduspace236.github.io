@@ -1,0 +1,17 @@
+.form-control{
+  height: 40px;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.form-group{
+  margin-bottom: 15px;
+  >label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+}
+.modal-backdrop.show{
+  opacity: .8;
+}

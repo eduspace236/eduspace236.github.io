@@ -1,0 +1,37 @@
+h1,h2,h3,h4,h5{
+  color: $blue-1;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+h1{
+  font-size: 24px;
+  @include breakpoint(sm){
+    font-size: 40px;
+  }
+}
+h2{
+  font-size: 20px;
+  @include breakpoint(sm){
+    font-size: 36px;
+  }
+}
+.title1{
+  position: relative;
+  padding-bottom: 25px;
+  &:before{
+    content: '';
+    width: 100px;
+    height: 8px;
+    background-color: $orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &.title1_center{
+    text-align: center;
+    &:before{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

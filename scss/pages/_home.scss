@@ -1,0 +1,286 @@
+.homeCenter{
+  padding: 40px 0;
+  position: relative;
+  &:before{
+    @include breakpoint(sm){
+      content: '';
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fafafa;
+      z-index: -1;
+    }
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 30px;
+    h1{
+      margin-bottom: 20px;
+    }
+    p{
+      color: #757575;
+      margin-bottom: 20px;
+      @include breakpoint(sm){
+        font-size: 20px;
+      }
+    }
+  }
+  &__img{
+    text-align: center;
+    margin-bottom: 35px;
+    @include breakpoint(sm){
+      margin-bottom: 50px;
+    }
+    img{
+      @include breakpoint(sm){
+        width: 500px;
+      }
+      @include breakpoint(lg){
+        width: 800px;
+      }
+    }
+  }
+  &__list{
+    display: flex;
+    @include breakpoint(xs){
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-right: -15px;
+      padding: 15px;
+    }
+    @include breakpoint(sm){
+      margin: 0 -15px;
+      position: relative;
+    }
+    > li{
+      @include breakpoint(sm){
+        width: 33.333%;
+        padding: 0 15px;
+      }
+      &.active{
+        .homeCenter__item{
+          background-color: $blue-1;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &__item{
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 4px;
+    height: 204px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $blue-1;
+    cursor: pointer;
+    @include breakpoint(xs){
+      width: 220px;
+      margin-right: 15px;
+    }
+    .d-block{
+      text-align: center;
+    }
+    p{
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+  }
+  &__edu{
+    @include breakpoint(xs){
+      display: none;
+    }
+    @include breakpoint(sm){
+      position: absolute;
+      top: 50%;
+      transform: translateY(-100%);
+    }
+    svg{
+      width: 50px;
+      height: 125px;
+    }
+  }
+  &__space{
+    @include breakpoint(xs){
+      display: none;
+    }
+    @include breakpoint(sm){
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      z-index: -1;
+    }
+    svg{
+      width: 50px;
+      height: 205px;
+    }
+  }
+  .container{
+    position: relative;
+  }
+}
+.solution{
+  padding: 40px 0;
+  background-color: #fafafa;
+  &.solution_reverse{
+    .solution__text{
+      @include breakpoint(xs){
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__text{
+    @include breakpoint(xs){
+      margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 0;
+      color: #757575;
+    }
+  }
+  .row{
+    @include breakpoint(sm){
+      align-items: center;
+    }
+  }
+  .col-6{
+    @include breakpoint(xs){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+.homeAbout{
+  padding: 40px 0;
+  &__circle{
+    @include breakpoint(sm){
+      padding: 50px 0;
+      position: relative;
+    }
+    &:before{
+      @include breakpoint(sm){
+        content: '';
+        width: 420px;
+        height: 420px;
+        background-color: #E2EFF4;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+  }
+  &__col{
+    @include breakpoint(sm){
+      padding: 0 15px;
+    }
+  }
+  &__slide{
+    @include breakpoint(sm){
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+.aboutItem{
+  background-color: $blue-1;
+  border-radius: 4px;
+  color: #fff;
+  position: relative;
+  padding-top: 15px;
+  &__svg{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  &__avatar{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__cont{
+    padding: 15px;
+    @include breakpoint(sm){
+      padding: 15px 30px;
+    }
+    > p{
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      height: 72px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  &__name{
+    text-align: center;
+    margin-top: 5px;
+  }
+}
+.customer{
+  padding: 40px 0;
+  background-color: #fafafa;
+  &__row{
+    display: flex;
+    @include breakpoint(xs){
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin: 15px -15px;
+      padding: 15px;
+    }
+    @include breakpoint(sm){
+      margin: 30px -15px;
+    }
+  }
+  &__col{
+    @include breakpoint(sm){
+      width: 25%;
+      padding: 0 15px;
+    }
+  }
+  &__item{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: $shadow;
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    @include breakpoint(xs){
+      width: 265px;
+      margin-right: 15px;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.homeRegister{
+  text-align: center;
+  padding: 40px 0;
+  h2{
+    margin-bottom: 20px;
+  }
+  p{
+    color: #757575;
+    margin-bottom: 20px;
+  }
+}

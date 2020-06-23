@@ -1,0 +1,254 @@
+.header{
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  &__logo{
+    width: 120px;
+    @include breakpoint(xs){
+      order: 1;
+    }
+    @include breakpoint(sm){
+      width: 170px;
+    }
+    a{
+      display: block;
+    }
+  }
+  &__menu{
+    @include breakpoint(xs){
+      width: 100%;
+      padding-bottom: 15px;
+      order: 3;
+      display: none;
+    }
+    > ul{
+      @include breakpoint(sm){
+        display: flex;
+        align-items: center;
+      }
+      > li{
+        @include breakpoint(xs){
+          padding: 0 15px;
+        }
+        @include breakpoint(sm){
+          position: relative;
+        }
+        &:hover{
+          @include breakpoint(sm){
+            .subMenu{
+              &__cont{
+                @include breakpoint(sm){
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+            }
+          }
+        }
+        + li{
+          @include breakpoint(sm){
+            margin-left: 15px;
+          }
+        }
+        > a{
+          color: #757575;
+          padding: 10px 0;
+          @include breakpoint(xs){
+            border-bottom: 1px dashed $border-color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          @include breakpoint(sm){
+            display: block;
+          }
+          &:hover{
+            text-decoration: none;
+            span{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__btn{
+    @include breakpoint(xs){
+      padding-top: 30px;
+    }
+    .btn{
+      @include breakpoint(xs){
+        width: 100%;
+      }
+    }
+  }
+  &__toggle{
+    @include breakpoint(xs){
+      order: 2;
+      height: 60px;
+    }
+    @include breakpoint(sm){
+      display: none;
+    }
+    svg{
+      display: block;
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include breakpoint(sm){
+      height: 85px;
+    }
+  }
+}
+.subMenu{
+  > a{
+    &.rotate{
+      &:after{
+        transform: rotate(180deg);
+      }
+    }
+    &:after{
+      content: '\f078';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 12px;
+      margin-left: 10px;
+      transition: all .2s;
+    }
+  }
+  &__cont{
+    @include breakpoint(xs){
+      padding-top: 15px;
+      display: none;
+    }
+    @include breakpoint(sm){
+      position: absolute;
+      top: calc(100% + 22px);
+      left: 50%;
+      z-index: 40;
+      transform: translateX(-50%);
+      width: 80vw;
+      background-color: #fff;
+      box-shadow: $shadow;
+      border-radius: 4px;
+      display: flex;
+      margin: 0 -15px;
+      padding: 30px 15px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s ease-in-out;
+    }
+    @include breakpoint(lg){
+      width: 720px;
+    }
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    span{
+      flex: 1;
+      padding-left: 5px;
+    }
+  }
+  &__item{
+    @include breakpoint(xs){
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    @include breakpoint(sm){
+      width: 33.333%;
+      padding: 0 15px;
+    }
+    > ul{
+      > li{
+        > a{
+          color: #757575;
+          display: block;
+          padding: 8px;
+          border-radius: 4px;
+          transition: all .2s ease-in-out;
+          &:hover{
+            text-decoration: none;
+            background-color: #FBF1DF;
+          }
+          p{
+            margin-bottom: 0;
+            &.medium{
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.modal-register{
+  @include breakpoint(sm){
+    max-width: 80%;
+  }
+  @include breakpoint(lg){
+    max-width: 940px;
+  }
+  .modal-body{
+    @include breakpoint(sm){
+      padding: 0;
+    }
+  }
+  .close{
+    @include breakpoint(sm){
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+}
+.formRegister{
+  @include breakpoint(sm){
+    display: flex;
+    width: 100%;
+    height: 570px;
+  }
+  &__img{
+    @include breakpoint(xs){
+      display: none;
+    }
+    @include breakpoint(sm){
+      width: 50%;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__title{
+    font-size: 20px;
+    font-weight: 500;
+    color: $blue-1;
+    margin-bottom: 15px;
+  }
+  &__cont{
+    @include breakpoint(sm){
+      width: 50%;
+      padding: 30px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @include breakpoint(lg){
+      padding: 30px;
+    }
+  }
+  &__btn{
+    .btn{
+      width: 100%;
+    }
+  }
+}
