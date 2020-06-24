@@ -1,0 +1,69 @@
+- var page = "index";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+
+        include jades/header.jade
+        main.wrapper
+            section.introWrapper
+                .introWrapper__banner(style='background-image: url(images/introWrapper-banner.jpg);')
+                    .container
+                        h1
+                            | Vận hành trung tâm hiệu quả hơn
+                            br
+                            | với Eduspace.vn
+                        a.btn.btn-orange(href='#')
+                            span Đăng ký ngay
+                .introWrapper__main
+                    .introWhat
+                        .container
+                            h2.title1.title1_center Eduspace.vn là gì?
+                            p Eduspace.vn là hệ thống quản lý hoạt động của trung tâm xoay quanh chủ thể chính là học viên với các chức năng: tiếp nhận học viên, xếp lớp, thu học phí, điểm danh, chuyển lớp (lớp học khác, lớp bảo lưu) và tương tác với phụ huynh qua tin nhắn (miễn phí). Để từ đó đưa ra những báo cáo chính xác về doanh thu, chi phí, nợ ..., đồng thời tiết kiệm thời gian, tránh sai sót trong việc thu chi, chuyển lớp của học viên, tương tác với phụ huynh
+                            .introWhat__img
+                                img(src='images/introAbout-img.png')
+                    .introHow
+                        .container
+                            h2.title1.title1_center Eduspace.vn giúp bạn vận hành trung tâm như thế nào
+                            .introHow__img
+                                .imgDesktop
+                                    img(src='images/introHow-desktop.png')
+                    
+                                .imgMobile
+                                    img(src='images/introHow-mobile.png')
+
+                    .introUse
+                        .container
+                            .row
+                                .col-6
+                                    .introUse__text
+                                        h2.title1 Trung tâm nào có thể sử dụng Eduspace.vn?
+                                        ul
+                                            li Các trung tâm đào tạo có số lượng học viên ngày một đông, gặp nhiều khó khăn thu học phí khi học viên chuyển lớp, bảo lưu
+                                            li Các trung tâm muốn tương tác nhiều hơn với phụ huynh về tình học tập của con. Các trung tâm muốn xây dựng các chương trình học online giúp học viên có thể tự ôn luyện ở nhà
+                                            li Các trung tâm muốn theo dõi lịch dạy cũng như bảng chấm công của các giáo viên
+                                .col-6
+                                    .introUse__img
+                                        img(src='images/introUse-img.jpg')
+        include jades/footer.jade
+
+
+        script(src='js/jquery-3.3.1.min.js')
+        script(src='js/popper.min.js')
+        script(src='/js/bootstrap.min.js')
+        script(src='/js/slick.min.js')
+
+        script.
+            if (screen.width < 768) {
+                $(".header__toggle").click(function () {
+                    $('.header__menu').slideToggle(200);
+                });
+                $(".subMenu > a").click(function () {
+                    $('.subMenu__cont').slideToggle(200);
+                    $(this).toggleClass('rotate');
+                });
+            };
+
+
+

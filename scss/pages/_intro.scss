@@ -1,0 +1,85 @@
+.introWrapper{
+  &__banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(10, 57, 99, .6);
+    padding: 100px 0;
+    text-align: center;
+    @include breakpoint(sm){
+      padding: 180px 0;
+    }
+    h1 {
+      color: #fff;
+    }
+  }
+  &__main{}
+}
+.introWhat{
+  padding: 40px 0;
+  text-align: center;
+  p{
+    font-size: 16px;
+    color: #757575;
+    @include breakpoint(sm){
+      font-size: 20px;
+    }
+  }
+  &__img{
+    @include breakpoint(sm){
+      padding: 0 10%;
+    }
+  }
+}
+.introHow{
+  padding: 40px 0;
+  background-color: #fafafa;
+  &__img{
+    padding: 15px 0;
+    .imgDesktop{
+      @include breakpoint(xs){
+        display: none;
+      }
+    }
+    .imgMobile{
+      @include breakpoint(sm){
+        display: none;
+      }
+    }
+  }
+}
+.introUse{
+  padding: 50px 0;
+  &__text{
+    @include breakpoint(xs){
+      margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 0;
+      color: #757575;
+    }
+  }
+  &__img{
+    height: 350px;
+    background-color:rgba(10, 58, 99, .3);
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      mix-blend-mode: multiply;
+    }
+  }
+  .row{
+    @include breakpoint(sm){
+      align-items: center;
+    }
+  }
+  .col-6{
+    @include breakpoint(xs){
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
