@@ -1,0 +1,28 @@
+.breadcrumb{
+  background: transparent;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  >li{
+    white-space: nowrap;
+    +li{
+      &:before{
+        content:'\003e';
+        padding: 0 10px;
+        color:#878787;
+      }
+    }
+    >a{
+      color: #288AE2;
+      transition: .3s;
+    }
+  }
+  >.active{
+    color: #9e9e9e;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
