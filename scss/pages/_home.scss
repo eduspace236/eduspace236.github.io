@@ -181,9 +181,46 @@
     }
   }
   &__slide{
+    padding-bottom: 40px;
     @include breakpoint(sm){
       width: 80%;
       margin: 0 auto;
+    }
+    .slick-arrow{
+      width: auto;
+      height: auto;
+      top: auto;
+      bottom: 0;
+      transform: none;
+      left: auto;
+      box-shadow: none;
+      &:before {
+        color: #288AE2;
+        font-size: 20px;
+      }
+    }
+
+    .slick-prev {
+      right: 30px;
+      @include breakpoint(sm){
+        right: 45px;
+      }
+      &:before {
+        content: '\f30a';
+      }
+    }
+
+    .slick-next {
+      right:0;
+      @include breakpoint(sm){
+        @media (min-width: 768px){
+          right: 15px;
+        }
+      }
+
+      &:before {
+        content: '\f30b';
+      }
     }
   }
 }

@@ -11,7 +11,6 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
-  padding-bottom: 30px;
 }
 .slick-list {
   position: relative;
@@ -68,11 +67,12 @@
   min-height: 1px;
   display: none;
   cursor: pointer;
+  &:focus{
+    outline: none;
+  }
   [dir="rtl"] & {
     float: right;
   }
-  &:focus{}
-  outline: none;
   img {
     display: block;
   }
@@ -109,11 +109,11 @@
 $slick-font-path: "./fonts/" !default;
 $slick-font-family: "Font Awesome\ 5 Free" !default;
 $slick-loader-path: "./" !default;
-$slick-arrow-color: #288AE2 !default;
+$slick-arrow-color: #666666 !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "\f30a" !default;
-$slick-next-character: "\f30b" !default;
+$slick-prev-character: "\f053" !default;
+$slick-next-character: "\f054" !default;
 $slick-dot-character: "\f111" !default;
 $slick-dot-size: 10px !default;
 $slick-opacity-default: 0.75 !default;
@@ -123,17 +123,22 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-arrow{
   position: absolute;
   display: block;
-  background-color: transparent;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   font-size: 0;
   cursor: pointer;
-  bottom: 0;
+  top: 50%;
+  transform: translate(0, -50%);
   padding: 0;
   border: none;
   outline: none;
   z-index: 1;
   &:before {
     font-family: $slick-font-family;
-    font-size: 20px;
+    font-size: 16px;
     color: $slick-arrow-color;
     font-weight: 900;
     -webkit-font-smoothing: antialiased;
@@ -142,21 +147,25 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-  right: 30px;
-  @media (min-width: 768px){
-    right: 45px;
-  }
+  left:0;
+  //[dir="rtl"] & {
+  //  left: auto;
+  //  right: -25px;
+  //}
   &:before {
     content: $slick-prev-character;
+    //[dir="rtl"] & {
+    //  content: $slick-next-character;
+    //}
   }
 }
 
 .slick-next {
   right:0;
-  @media (min-width: 768px){
-    right: 15px;
-  }
-
+  //[dir="rtl"] & {
+  //  left: -25px;
+  //  right: auto;
+  //}
   &:before {
     content: $slick-next-character;
     //[dir="rtl"] & {
@@ -167,7 +176,7 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-disabled{
   cursor: not-allowed!important;
   &:before{
-    color: #bdbdbd;
+    color: #bdbdbd!important;
   }
 }
 .slick-arrow{
@@ -177,9 +186,6 @@ $slick-opacity-not-active: 0.25 !default;
 }
 /* Dots */
 
-//.slick-dotted.slick-slider {
-//  margin-bottom: 30px;
-//}
 
 .slick-dots {
   position: absolute;

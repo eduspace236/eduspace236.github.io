@@ -1,0 +1,138 @@
+header.header
+    .container
+        .header__logo
+            a(href='index.html')
+                img(src='images/logo.png')
+        button.header__toggle(type='button')
+            svg(width='18', height='12', viewBox='0 0 18 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                path(d='M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z', fill='#757575')
+        .header__menu
+            ul
+                li
+                    a(href='#')
+                        span Giới thiệu
+                li.subMenu
+                    a(href='#')
+                        span Tính năng
+                    .subMenu__cont
+                        .subMenu__item
+                            .subMenu__title
+                                svg(width='16', height='20', viewBox='0 0 16 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M14.1135 14.0627C13.9657 13.7093 13.61 13.4829 13.2707 13.3438L10.9765 12.2874L9.87421 11.3578L8.10314 13.1193H8.10179L8.86615 18.2288C8.8689 18.2463 8.86435 18.2642 8.85394 18.2786L8.05477 19.3722C8.04207 19.3899 8.0218 19.4 8.00018 19.4C7.97857 19.4 7.9583 19.3897 7.9456 19.3722L7.14651 18.2786C7.13597 18.2642 7.13156 18.2462 7.13422 18.2288L7.89849 13.1193H7.89732L6.12633 11.3578L5.02409 12.2874L2.72976 13.3438C2.3903 13.4829 2.05674 13.6943 1.88703 14.0627C1.88703 14.0627 -0.606826 20 0.745833 20H15.2549C16.6074 20.0001 14.1135 14.0627 14.1135 14.0627Z', fill='#F2781C')
+                                    path(d='M14.273 5.92213C14.3075 5.91839 14.3386 5.9019 14.36 5.8752C14.3817 5.84853 14.3914 5.81417 14.3876 5.77998C14.3619 5.56069 14.3361 5.34184 14.3107 5.12255L14.2572 4.66365C14.2491 4.59514 14.1878 4.54533 14.1188 4.5515L14.0195 4.55163L14.0214 3.01121L14.0734 2.99234L14.2465 2.92982C14.3932 2.87677 14.4908 2.73773 14.4908 2.58194C14.4908 2.42611 14.3932 2.28703 14.2465 2.23392L8.12609 0.0220579C8.04471 -0.00735262 7.95571 -0.00735262 7.87451 0.0220579L1.75397 2.23392C1.60741 2.28703 1.50977 2.42611 1.50977 2.58194C1.50977 2.73773 1.60741 2.87677 1.75397 2.92982L4.01655 3.74751C3.85684 4.25172 3.78415 4.82903 3.79068 5.47178C3.83049 9.13805 5.95877 11.3243 7.92806 11.3243C9.87433 11.3243 12.0257 9.13805 12.0653 5.47178C12.0719 4.8488 12.0032 4.28766 11.8538 3.79462L13.4989 3.2001L13.5024 4.55222L13.403 4.55217C13.334 4.54614 13.2726 4.59577 13.2647 4.66482L13.1361 5.78124C13.1322 5.81525 13.1422 5.84925 13.1638 5.87601C13.1853 5.90262 13.2167 5.91969 13.2508 5.92253L14.273 5.92213ZM7.92833 10.434C6.21018 10.434 5.02461 8.4213 4.78546 6.40927C4.56432 4.54853 7.25531 4.46192 7.41159 5.61523C7.45974 5.96978 7.05263 6.34959 7.0988 6.49601C7.32652 7.21884 11.097 4.13673 11.0712 6.40837C11.0531 8.01225 9.56536 10.434 7.92833 10.434Z', fill='#F2781C')
+                                span Quản lý học viên
+                            ul
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý học viên 1
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý học viên 2
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý học viên 3
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .subMenu__item
+                            .subMenu__title
+                                svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                    g(clip-path='url(#clip0)')
+                                        path(d='M14.0897 0.681406C14.1183 0.511602 14.0703 0.338398 13.9588 0.206953C13.8479 0.0754687 13.6844 0 13.5124 0C11.8965 0 10.9424 0.636328 10.0001 1.52434C9.05772 0.636328 8.10358 0 6.4878 0C6.31573 0 6.15452 0.0874609 6.04308 0.218945C5.93218 0.35043 5.88589 0.535625 5.91445 0.70543C6.09511 1.79098 6.09511 2.89203 5.91445 3.97762L5.91042 4.0016C5.88187 4.17141 5.92984 4.34461 6.04132 4.47605C6.15222 4.60754 6.31573 4.68301 6.4878 4.68301C8.10362 4.68301 9.05768 4.04668 10.0001 3.15867C10.9424 4.04668 11.8965 4.68301 13.5123 4.68301C13.6844 4.68301 13.8456 4.59555 13.9571 4.46406C14.068 4.33258 14.1142 4.14738 14.0857 3.97758C13.9051 2.89203 13.9051 1.79102 14.0897 0.681406Z', fill='#F2781C')
+                                        path(d='M6.3436 6.13191C6.18013 5.94441 5.91372 5.88266 5.68563 5.97355L2.75876 7.1443C2.60157 7.20715 2.47923 7.33523 2.42317 7.49527C2.3677 7.65535 2.38372 7.83141 2.46778 7.97832L2.55868 8.13723C3.19094 9.24394 3.53622 10.4976 3.56024 11.7701L2.45864 13.8532C2.39348 13.9761 2.37462 14.1185 2.4043 14.254L3.57505 19.5224C3.6345 19.7905 3.87231 19.9809 4.14669 19.9809C4.71821 19.9809 8.84431 19.9809 9.41509 19.9809V18.8102V9.6423L6.3436 6.13191Z', fill='#F2781C')
+                                        path(d='M16.4398 11.7701C16.4638 10.4976 16.8091 9.24401 17.4414 8.13726L17.5323 7.97835C17.6163 7.83144 17.6323 7.65538 17.5769 7.4953C17.5209 7.33522 17.3986 7.20718 17.2413 7.14433L14.3145 5.97358C14.0852 5.88269 13.8205 5.94444 13.6565 6.13194L10.585 9.64233V14.1271H11.1704C11.4939 14.1271 11.7557 14.389 11.7557 14.7125C11.7557 15.0361 11.4939 15.2979 11.1704 15.2979H10.585V16.4687H11.1704C11.4939 16.4687 11.7557 16.7305 11.7557 17.054C11.7557 17.3776 11.4939 17.6394 11.1704 17.6394H10.585V19.981C16.1021 19.981 16.2874 20.1431 16.425 19.5225L17.5957 14.2541C17.6255 14.1186 17.6066 13.9763 17.5414 13.8533L16.4398 11.7701ZM13.5118 12.9564H12.3411C12.0175 12.9564 11.7557 12.6945 11.7557 12.371C11.7557 12.0474 12.0175 11.7856 12.3411 11.7856H13.5118C13.8354 11.7856 14.0972 12.0474 14.0972 12.371C14.0972 12.6945 13.8354 12.9564 13.5118 12.9564Z', fill='#F2781C')
+                                    defs
+                                        clippath#clip0
+                                            rect(width='20', height='20', fill='white')
+
+                                span Quản lý nhân viên
+                            ul
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý nhân viên 1
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý nhân viên 2
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý nhân viên 3
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        .subMenu__item
+                            .subMenu__title
+                                svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M14.1752 16.25C14.1669 16.3083 14.1669 16.375 14.1669 16.4333V17.7083C14.1669 18.975 13.1419 20 11.8752 20H8.1252C6.85853 20 5.83353 18.975 5.83353 17.7083V16.4333C5.83353 16.375 5.83353 16.3083 5.8252 16.25H14.1752Z', fill='#F2781C')
+                                    path(d='M14.7993 1.75833C13.4493 0.624994 11.7493 0.0249939 9.99929 0.0249939C9.53263 0.0249939 9.05763 0.0666606 8.58263 0.158327C5.79929 0.666661 3.52429 2.74166 2.78262 5.44999C2.08262 7.98333 2.70762 10.5583 4.48262 12.5083C5.12429 13.2167 5.54929 14.075 5.73263 15H14.2743C14.4493 14.075 14.8826 13.2083 15.5243 12.5C16.7993 11.1083 17.4993 9.34166 17.4993 7.52499C17.4993 5.29166 16.516 3.19166 14.7993 1.75833ZM11.666 6.24999H9.68679C9.39929 6.24999 9.16596 6.48333 9.16596 6.77083C9.16596 7.05833 9.39929 7.29166 9.68679 7.29166H10.3118C11.2885 7.29166 12.0826 8.08583 12.0826 9.06249C12.0826 9.93166 11.4518 10.6533 10.6243 10.8017V11.875C10.6243 12.22 10.3443 12.5 9.99929 12.5C9.65429 12.5 9.37429 12.22 9.37429 11.875V10.8333H8.54096C8.19596 10.8333 7.91596 10.5533 7.91596 10.2083C7.91596 9.86333 8.19596 9.58333 8.54096 9.58333H10.3118C10.5993 9.58333 10.8326 9.34999 10.8326 9.06249C10.8326 8.77499 10.5993 8.54166 10.3118 8.54166H9.68679C8.71013 8.54166 7.91596 7.74749 7.91596 6.77083C7.91596 5.90166 8.54679 5.17999 9.37429 5.03166V3.95833C9.37429 3.61333 9.65429 3.33333 9.99929 3.33333C10.3443 3.33333 10.6243 3.61333 10.6243 3.95833V4.99999H11.666C12.011 4.99999 12.291 5.27999 12.291 5.62499C12.291 5.96999 12.011 6.24999 11.666 6.24999Z', fill='#F2781C')
+
+                                span Quản lý tài chính
+                            ul
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý tài chính 1
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý tài chính 2
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                li
+                                    a(href='#')
+                                        p.medium Quản lý tài chính 3
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                li
+                    a(href='#')
+                        span Cẩm nang
+                li
+                    a(href='#')
+                        span Hỗ trợ
+                li
+                    .header__btn
+                        button.btn.btn-orange(type='button' data-toggle="modal" data-target="#registerModal")
+                            span Đăng ký
+#registerModal.modal.fade
+    .modal-dialog.modal-register
+        .modal-content
+            .modal-body
+                button.close(type='button', data-dismiss='modal')
+                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z', fill='#9E9E9E')
+
+                .formRegister
+                    .formRegister__img
+                        img(src='images/formRegister-img.jpg')
+                    .formRegister__cont
+                        p.formRegister__title Đăng ký dùng thử miễn phí
+                        .formRegister__input
+                            .form-group
+                                .d-flex.align-items-center
+                                    input.form-control(type='text' placeholder='Tên miền con')
+                                    span.ml10 .eduspace.vn
+                                p.mb0.mt15 VD: abc.eduspace.vn
+                            .form-group
+                                input.form-control(type='text' placeholder='Họ và tên')
+
+
+
+                            .form-group
+                                input.form-control(type='text' placeholder='Số điện thoại')
+
+
+
+                            .form-group
+                                input.form-control(type='text' placeholder='Email')
+
+
+
+                            .form-group
+                                input.form-control(type='text' placeholder='Mật khẩu')
+
+
+
+                            .form-group
+                                input.form-control(type='text' placeholder='Nhập lại mật khẩu')
+
+
+
+                        .formRegister__btn
+                            button.btn.btn-orange(type='button')
+                                span Đăng ký ngay

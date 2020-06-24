@@ -15,6 +15,18 @@ h2{
     font-size: 36px;
   }
 }
+h3{
+  font-size: 18px;
+  @include breakpoint(sm){
+    font-size: 30px;
+  }
+}
+h4{
+  font-size: 16px;
+  @include breakpoint(sm){
+    font-size: 26px;
+  }
+}
 .title1{
   position: relative;
   padding-bottom: 25px;
@@ -32,6 +44,14 @@ h2{
     &:before{
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+  &.title1_sm{
+    font-size: 16px;
+    padding-bottom: 10px;
+    &:before{
+      width: 50px;
+      height: 4px;
     }
   }
 }

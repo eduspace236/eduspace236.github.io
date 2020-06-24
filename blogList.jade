@@ -1,0 +1,247 @@
+- var page = "index";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+
+        include jades/header.jade
+        main.wrapper
+            section.blogList
+                .blogList__banner(style='background-image: url(images/blogList-banner.jpg);')
+                    h1 Cẩm nang Eduspace
+                .blogList__main
+                    .container
+                        .blogList__tab
+                            .blogTab
+                                .blogTab__col
+                                    button.blogTab__item(type='button')
+                                        span Title cẩm nang 1
+                                .blogTab__col
+                                    button.blogTab__item(type='button')
+                                        span Title cẩm nang 2
+                                .blogTab__col
+                                    button.blogTab__item(type='button')
+                                        span Title cẩm nang 3
+                                .blogTab__col
+                                    button.blogTab__item(type='button')
+                                        span Title cẩm nang 4
+                                .blogTab__col
+                                    button.blogTab__item(type='button')
+                                        span Title cẩm nang 5
+                                .blogTab__col
+                                    button.blogTab__item(type='button')
+                                        span Title cẩm nang 6
+                                .blogTab__col
+                                    button.blogTab__item(type='button')
+                                        span Title cẩm nang 7
+                            .dropdown.dropdownTab
+                                button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span Danh mục cẩm nang
+                                .dropdown-menu
+                                    a.dropdown-item(href='#') Title cẩm nang 1
+                                    a.dropdown-item(href='#') Title cẩm nang 2
+                                    a.dropdown-item(href='#') Title cẩm nang 3
+                                    a.dropdown-item(href='#') Title cẩm nang 4
+
+                        .row
+                            .col-9
+                                .blogList__list
+                                    .blogItem
+                                        .blogItem__img
+                                            a(href='#')
+                                                img(src='images/blogItem-1.jpg')
+                                        .blogItem__cont
+                                            a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                            .blogItem__line
+                                                .blogItem__date
+                                                    svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                    span 21 Th06, 2020
+                                                .blogItem__comment
+                                                    svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H16L20 20V2C20 0.9 19.1 0 18 0ZM16 12H4V10H16V12ZM16 9H4V7H16V9ZM16 6H4V4H16V6Z', fill='#BDBDBD')
+                                                    span 08 bình luận
+                                            .blogItem__text
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries ...
+                                    .blogItem
+                                        .blogItem__img
+                                            a(href='#')
+                                                img(src='images/blogItem-2.jpg')
+                                        .blogItem__cont
+                                            a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                            .blogItem__line
+                                                .blogItem__date
+                                                    svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                    span 21 Th06, 2020
+                                                .blogItem__comment
+                                                    svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H16L20 20V2C20 0.9 19.1 0 18 0ZM16 12H4V10H16V12ZM16 9H4V7H16V9ZM16 6H4V4H16V6Z', fill='#BDBDBD')
+                                                    span 08 bình luận
+                                            .blogItem__text
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries ...
+                                    .blogItem
+                                        .blogItem__img
+                                            a(href='#')
+                                                img(src='images/blogItem-3.jpg')
+                                        .blogItem__cont
+                                            a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                            .blogItem__line
+                                                .blogItem__date
+                                                    svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                    span 21 Th06, 2020
+                                                .blogItem__comment
+                                                    svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H16L20 20V2C20 0.9 19.1 0 18 0ZM16 12H4V10H16V12ZM16 9H4V7H16V9ZM16 6H4V4H16V6Z', fill='#BDBDBD')
+                                                    span 08 bình luận
+                                            .blogItem__text
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries ...
+                                    .blogItem
+                                        .blogItem__img
+                                            a(href='#')
+                                                img(src='images/blogItem-1.jpg')
+                                        .blogItem__cont
+                                            a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                            .blogItem__line
+                                                .blogItem__date
+                                                    svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                    span 21 Th06, 2020
+                                                .blogItem__comment
+                                                    svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H16L20 20V2C20 0.9 19.1 0 18 0ZM16 12H4V10H16V12ZM16 9H4V7H16V9ZM16 6H4V4H16V6Z', fill='#BDBDBD')
+                                                    span 08 bình luận
+                                            .blogItem__text
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries ...
+                                    .blogItem
+                                        .blogItem__img
+                                            a(href='#')
+                                                img(src='images/blogItem-2.jpg')
+                                        .blogItem__cont
+                                            a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                            .blogItem__line
+                                                .blogItem__date
+                                                    svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                    span 21 Th06, 2020
+                                                .blogItem__comment
+                                                    svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H16L20 20V2C20 0.9 19.1 0 18 0ZM16 12H4V10H16V12ZM16 9H4V7H16V9ZM16 6H4V4H16V6Z', fill='#BDBDBD')
+                                                    span 08 bình luận
+                                            .blogItem__text
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries ...
+                                    .blogItem
+                                        .blogItem__img
+                                            a(href='#')
+                                                img(src='images/blogItem-3.jpg')
+                                        .blogItem__cont
+                                            a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                            .blogItem__line
+                                                .blogItem__date
+                                                    svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                    span 21 Th06, 2020
+                                                .blogItem__comment
+                                                    svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H16L20 20V2C20 0.9 19.1 0 18 0ZM16 12H4V10H16V12ZM16 9H4V7H16V9ZM16 6H4V4H16V6Z', fill='#BDBDBD')
+                                                    span 08 bình luận
+                                            .blogItem__text
+                                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries ...
+                                ul.pagination
+                                    li
+                                        a(href='#') <
+                                    li.active
+                                        a(href='#') 1
+                                    li
+                                        a(href='#') 2
+                                    li
+                                        a(href='#') 3
+                                    li
+                                        a(href='#') 4
+                                    li
+                                        a(href='#') 5
+                                    li
+                                        a(href='#') >
+                            .col-3
+                                .blogList__tip
+                                    .tipBox
+                                        img(src='images/tip-1.jpg')
+                                        .tipBox__btn
+                                            a.btn.btn-white(href='#')
+                                                span Kinh nghiệm hay
+
+                                    .tipBox
+                                        img(src='images/tip-2.jpg')
+                                        .tipBox__btn
+                                            a.btn.btn-white(href='#')
+                                                span Thủ thuật
+
+                                .blogList__recent
+                                    h3.title1.title1_sm Bài viết gần đây
+                                    .blogList__list
+                                        .blogItem.blogItem_sm
+                                            .blogItem__img
+                                                a(href='#')
+                                                    img(src='images/blogItem-1.jpg')
+                                            .blogItem__cont
+                                                a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                                .blogItem__line
+                                                    .blogItem__date
+                                                        svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                            path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                        span 21 Th06, 2020
+                                        .blogItem.blogItem_sm
+                                            .blogItem__img
+                                                a(href='#')
+                                                    img(src='images/blogItem-2.jpg')
+                                            .blogItem__cont
+                                                a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                                .blogItem__line
+                                                    .blogItem__date
+                                                        svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                            path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                        span 21 Th06, 2020
+                                        .blogItem.blogItem_sm
+                                            .blogItem__img
+                                                a(href='#')
+                                                    img(src='images/blogItem-3.jpg')
+                                            .blogItem__cont
+                                                a.blogItem__link(href='#') Hướng dẫn lập kế hoạch xây dựng nội dung trường học trực tuyến
+                                                .blogItem__line
+                                                    .blogItem__date
+                                                        svg(width='18', height='20', viewBox='0 0 18 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                            path(d='M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z', fill='#BDBDBD')
+                                                        span 21 Th06, 2020
+        include jades/footer.jade
+
+
+        script(src='js/jquery-3.3.1.min.js')
+        script(src='js/popper.min.js')
+        script(src='/js/bootstrap.min.js')
+        script(src='/js/slick.min.js')
+
+        script.
+            if (screen.width < 768) {
+                $(".header__toggle").click(function () {
+                    $('.header__menu').slideToggle(200);
+                });
+                $(".subMenu > a").click(function () {
+                    $('.subMenu__cont').slideToggle(200);
+                    $(this).toggleClass('rotate');
+                });
+            };
+        script.
+            $(".blogTab").slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                //autoplay: true,
+                speed: 800,
+                autoplaySpeed: 5000,
+                arrows: true,
+                dots: false,
+            });
+
+
+
