@@ -22,8 +22,18 @@
     text-align: center;
     margin-bottom: 35px;
     @include breakpoint(sm){
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
       width: 80%;
       margin: 0 auto 50px;
+      padding: 70px 80px 90px;
+    }
+    @include breakpoint(md){
+      padding: 70px 100px 95px;
+    }
+    @include breakpoint(lg){
+      padding: 70px 120px 95px;
     }
     img{
       @include breakpoint(sm){
