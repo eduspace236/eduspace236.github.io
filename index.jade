@@ -8,15 +8,16 @@ html(lang="vi")
             include jades/header.jade
             main.wrapper
                 section.homeWrapper
-                    .homeCenter
+                    .homeCenter(style='background-image: url(images/homeCenter-bg.png);')
                         .container
                             .homeCenter__title
                                 h1 Vận hành trung tâm hiệu quả hơn với Eduspace.vn
                                 p Không giới hạn thời gian dùng thử
                                 button.btn.btn-orange(type='button')
                                     span Đăng ký ngay
-                            .homeCenter__img
-                                img(src='images/homeCenter-img.png')
+                            .homeCenter__video
+                                .videoBox
+                                    iframe(width='560', height='315', src='https://www.youtube.com/embed/wCc2v7izk8w?rel=0&showinfo=0', frameborder='0', allowfullscreen='')
                             ul.homeCenter__list
                                 li
                                     .homeCenter__item
@@ -186,6 +187,27 @@ html(lang="vi")
                     }
                 ]
             });
+        script.
+            if (screen.width < 768) {
+                var video = $('.homeCenter__video').offset().top - 60;
+                $(".homeCenter__item").click(function () {
+                    $('.homeCenter__list li').removeClass('active');
+                    $(this).parent('li').addClass('active');
+
+                    $('html,body').animate({scrollTop: video}, 400);
+
+                });
+            };
+            if (screen.width >= 768) {
+                var video = $('.homeCenter__video').offset().top - 85;
+                $(".homeCenter__item").click(function () {
+                    $('.homeCenter__list li').removeClass('active');
+                    $(this).parent('li').addClass('active');
+
+                    $('html,body').animate({scrollTop: video}, 400);
+
+                });
+            };
 
 
 

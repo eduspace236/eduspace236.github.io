@@ -151,14 +151,18 @@
       </div>
       <main class="wrapper">
         <section class="homeWrapper">
-          <div class="homeCenter">
+          <div style="background-image: url(images/homeCenter-bg.png);" class="homeCenter">
             <div class="container">
               <div class="homeCenter__title">
                 <h1>Vận hành trung tâm hiệu quả hơn với Eduspace.vn</h1>
                 <p>Không giới hạn thời gian dùng thử</p>
                 <button type="button" class="btn btn-orange"><span>Đăng ký ngay</span></button>
               </div>
-              <div class="homeCenter__img"><img src="images/homeCenter-img.png"></div>
+              <div class="homeCenter__video">
+                <div class="videoBox">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/wCc2v7izk8w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+              </div>
               <ul class="homeCenter__list">
                 <li>
                   <div class="homeCenter__item">
@@ -450,6 +454,28 @@
               }
           ]
       });
+    </script>
+    <script>
+      if (screen.width < 768) {
+          var video = $('.homeCenter__video').offset().top - 60;
+          $(".homeCenter__item").click(function () {
+              $('.homeCenter__list li').removeClass('active');
+              $(this).parent('li').addClass('active');
+      
+              $('html,body').animate({scrollTop: video}, 400);
+      
+          });
+      };
+      if (screen.width >= 768) {
+          var video = $('.homeCenter__video').offset().top - 85;
+          $(".homeCenter__item").click(function () {
+              $('.homeCenter__list li').removeClass('active');
+              $(this).parent('li').addClass('active');
+      
+              $('html,body').animate({scrollTop: video}, 400);
+      
+          });
+      };
     </script>
   </body>
 </html>
