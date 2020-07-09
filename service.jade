@@ -1,0 +1,121 @@
+- var page = "index";
+doctype html
+html(lang="vi")
+    head
+        include jades/head
+    body(ontouchstart='')
+        section.pageBody
+            include jades/header.jade
+            main.wrapper
+                section.service
+                    .service__banner(style='background-image: url(images/service-banner.jpg);')
+                        h1 Phí dịch vụ
+                    .service__main
+                        .container
+                            .serviceBox
+                                .serviceBox__row
+                                    .serviceBox__col
+                                        .serviceBox__item
+                                            .serviceBox__header
+                                                p
+                                                    | GÓI
+                                                    span FREE
+                                            .serviceBox__body
+                                                .serviceBox__price
+                                                    p.medium Miễn phí
+                                                    i (Không giới hạn)
+                                                ul.serviceBox__list
+                                                    li Số lượng học viên: 30
+                                                    li Dung lượng: 0 GB
+                                                .serviceBox__btn
+                                                    button.btn(type='button')
+                                                        span Đăng ký ngay
+
+
+
+
+                                    .serviceBox__col
+                                        .serviceBox__item
+                                            .serviceBox__header
+                                                p
+                                                    | GÓI
+                                                    span SMALL
+                                            .serviceBox__body
+                                                .serviceBox__price
+                                                    p.medium 350.000đ/ 1 tháng
+                                                    i (Thanh toán theo năm)
+                                                ul.serviceBox__list
+                                                    li Số lượng học viên: dưới 100
+                                                    li Dung lượng: 0 GB
+                                                .serviceBox__btn
+                                                    button.btn(type='button')
+                                                        span Đăng ký ngay
+
+
+
+
+                                    .serviceBox__col
+                                        .serviceBox__item
+                                            .serviceBox__header
+                                                p
+                                                    | GÓI
+                                                    span PLUS
+                                            .serviceBox__body
+                                                .serviceBox__price
+                                                    p.medium 490.000đ/ 1 tháng
+                                                    i (Thanh toán theo năm)
+                                                ul.serviceBox__list
+                                                    li Số lượng học viên: 100 - 300
+                                                    li Dung lượng: 1 GB
+                                                .serviceBox__btn
+                                                    button.btn(type='button')
+                                                        span Đăng ký ngay
+
+
+
+
+                                    .serviceBox__col
+                                        .serviceBox__item
+                                            .serviceBox__header
+                                                p
+                                                    | GÓI
+                                                    span BASIC
+                                            .serviceBox__body
+                                                .serviceBox__price
+                                                    p.medium 790.000đ/ 1 tháng
+                                                    i (Thanh toán theo năm)
+                                                ul.serviceBox__list
+                                                    li Số lượng học viên: 300 - 500
+                                                    li Dung lượng: 2 GB
+                                                .serviceBox__btn
+                                                    button.btn(type='button')
+                                                        span Đăng ký ngay
+
+
+
+
+                                p.serviceBox__note
+                                    | Lưu ý: Quý khách có thể mua thêm dung lượng upload video theo đơn giá:
+                                    strong &nbsp;200.000đ/GB&nbsp;
+                                    | data dung lượng
+            include jades/footer.jade
+
+
+        script(src='js/jquery-3.3.1.min.js')
+        script(src='js/popper.min.js')
+        script(src='/js/bootstrap.min.js')
+        script(src='/js/slick.min.js')
+
+        script.
+            if (screen.width < 768) {
+                $(".header__toggle").click(function () {
+                    $('.header__menu').slideToggle(200);
+                });
+                $(".subMenu > a").click(function () {
+                    $('.subMenu__cont').slideToggle(200);
+                    $(this).toggleClass('rotate');
+                });
+            };
+
+
+

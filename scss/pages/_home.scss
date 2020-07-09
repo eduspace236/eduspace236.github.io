@@ -128,6 +128,7 @@
   padding: 40px 0;
   background-color: #fafafa;
   &.solution_reverse{
+    background-color: #fff;
     .solution__text{
       @include breakpoint(xs){
         margin-top: 20px;
@@ -142,6 +143,30 @@
     p{
       margin-bottom: 0;
       color: #757575;
+    }
+  }
+  &__link{
+    margin: 15px 0;
+    p{
+      color: #424242;
+      margin-bottom: 15px;
+    }
+    ul{
+      li{
+        padding-bottom: 5px;
+        &:before{
+          content: '●';
+          color: #C4C4C4;
+          margin-right: 10px;
+        }
+        a{
+          color: #288AE2;
+          font-size: 14px;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
   .row{
