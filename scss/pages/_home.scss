@@ -56,13 +56,15 @@
         left: 4px;
       }
       @include breakpoint(lg){
-        width: 615px;
+        width: 611px;
         height: 380px;
         top: 27px;
         left: 3px;
       }
       iframe{
         position: initial;
+        width: 100%;
+        height: 100%;
       }
     }
   }
